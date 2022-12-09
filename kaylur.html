@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=c, initial-scale=1.0">
     <title>Personal Profile Tutorial</title>
-    <link rel="stylesheet" href="css/style.css">
-    <!-- <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/main_image.css"> -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/music.css">
 </head>
 <body>
     <div id="header">
@@ -46,7 +47,7 @@
                 <br>
                 <p>Now that just covers the Singer | Song-writer aspect of me, what about being a DJ?
                     Growing in this industry can be a hard knock. The in-between pauses within the journey gave me time
-                    to explore some of my interest or curiousity rather. So I learnt how to DJ, and some of the genres I'm 
+                    to explore some of my interest or curiousities rather. So I learnt how to DJ, and some of the genres I'm 
                     capable of mixing include House, Electro House, Amapiano, RnB, Hip Hop & Afro Beat.</p>
                 <br>
                 <p>Lastly, A Cherry Unxpected On Top</p>
@@ -84,17 +85,18 @@
         </div>
        </div> 
     </div>
-    <script>
-        var tablinks = document.getElementsByClassName("tab-links");
-        var tabcontents = document.getElementsByClassName("tab-contents");
-        function opentab(tabname){
-            for(tlink of tablinks){
-               tlink.classList.remove("active-link") //this removes the active link
-            }
-            for(tlink of tabcontents){
-               tlink.classList.remove("active-tab") //this removes the active tab
-            }
-        }
-    </script>
+
+    <!-- ---------------MUSIC----------------- -->
+    <div id="music">
+        <div class="container">
+            <h1 class="sub-title">My Music</h1>
+            <div class="music-list">
+                
+
+            </div>
+        </div>
+    </div>
+    
+    <script type="text/javascript" src="/js/artist.js"></script>
 </body>
 </html>
