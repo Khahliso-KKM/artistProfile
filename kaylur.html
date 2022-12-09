@@ -53,14 +53,48 @@
                 <p>A software Engineer, who by the way, built this cute little online Profile</p>
 
                 <div class="tab-titles">
-                    <p class="tab-links active-link">Music</p>
-                    <p class="tab-links">Disc Jockey</p>
-                    <p class="tab-links">Education</p>
+                    <p class="tab-links active-link" onclick="opentab('music')">Music</p>
+                    <p class="tab-links" onclick="opentab('dj')">Disc Jockey</p>
+                    <p class="tab-links" onclick="opentab('edu')">Education</p>
                 </div>
+                <div class="tab-contents active-tab" id="music">
+                    <ul>
+                        <li><span>Jan 2023</span><br>Kaylur - Grandma said {produced by Sirius}</li>
+                        <li><span>June 2022</span><br>Kaylur - Sober ft LuE {produced by Sirius}</li>
+                        <li><span>March 2022</span><br>Kaylur - Mood {produced by Brett Travis}</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="dj">
+                    <ul>
+                        <li><span>Jan 2023</span><br>Party with Pop Mix - Mixed by DJ Kaylur</li>
+                        <li><span>Feb 2023</span><br> Bad Bitch Sundae RnB HipHop Mix - Mixed by DJ Kaylur</li>
+                        <li><span>March 2023</span><br>Girl In Her Feels RnB Mix - Mixed by DJ Kaylur</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="edu">
+                    <ul>
+                        <li><span>2018</span><br>Information Technology</li>
+                        <li><span>2021</span><br>Software Engineering</li>
+                        <li><span>Skills</span><br>Python - Java - SQL - HTML/CSS & more</li>
+                    </ul>
+                </div>
+
                 
             </div>
         </div>
        </div> 
     </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tlink of tablinks){
+               tlink.classList.remove("active-link") //this removes the active link
+            }
+            for(tlink of tabcontents){
+               tlink.classList.remove("active-tab") //this removes the active tab
+            }
+        }
+    </script>
 </body>
 </html>
