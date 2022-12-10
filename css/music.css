@@ -2,6 +2,12 @@
 
 #music{
     padding: 30px 0;
+    color: rgb(160, 156, 163);
+    /* width: 100%;
+    height: 100vh; */
+    background-image: url(/images/background_flip.png);
+    /* background-size: cover;
+    background-position: center; */
 
 }
 
@@ -10,4 +16,22 @@
     grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
     grid-gap: 40px;
     margin-top: 50px;
+}
+
+.music-list audio{
+    width: 15rem;
+    height: 5rem;
+    
+}
+
+/* .music-list audio::webkit-media-controls-play-button, */
+
+audio::-webkit-media-controls-play-button,
+
+audio::-webkit-media-controls-panel {
+
+  background-color: #ff004f;
+
+  color: rgb(47, 136, 238);
+
 }
